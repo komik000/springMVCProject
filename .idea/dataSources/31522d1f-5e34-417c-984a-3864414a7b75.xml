@@ -2,7 +2,7 @@
 <dataSource name="first_MVC_project@localhost">
   <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.45">
     <root id="1">
-      <DefaultCasing>mixed/mixed</DefaultCasing>
+      <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
       <Grants>|root||root|127.0.0.1|ALTER|G
 |root||root|::1|ALTER|G
@@ -104,6 +104,7 @@ test|schema||&apos;&apos;||CREATE ROUTINE|G
 test|schema||&apos;&apos;||CREATE TEMPORARY TABLES|G
 test|schema||&apos;&apos;||CREATE VIEW|G
 test|schema||&apos;&apos;||DELETE|G
+test|schema||&apos;&apos;||DELETE HISTORY|G
 test|schema||&apos;&apos;||DROP|G
 test|schema||&apos;&apos;||EVENT|G
 test|schema||&apos;&apos;||INDEX|G
@@ -120,6 +121,7 @@ test\\_%|schema||&apos;&apos;||CREATE ROUTINE|G
 test\\_%|schema||&apos;&apos;||CREATE TEMPORARY TABLES|G
 test\\_%|schema||&apos;&apos;||CREATE VIEW|G
 test\\_%|schema||&apos;&apos;||DELETE|G
+test\\_%|schema||&apos;&apos;||DELETE HISTORY|G
 test\\_%|schema||&apos;&apos;||DROP|G
 test\\_%|schema||&apos;&apos;||EVENT|G
 test\\_%|schema||&apos;&apos;||INDEX|G
@@ -130,7 +132,7 @@ test\\_%|schema||&apos;&apos;||SELECT|G
 test\\_%|schema||&apos;&apos;||SHOW VIEW|G
 test\\_%|schema||&apos;&apos;||TRIGGER|G
 test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
-      <ServerVersion>10.4.28</ServerVersion>
+      <ServerVersion>10.4.24</ServerVersion>
     </root>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
@@ -1138,9 +1140,9 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     <collation id="323" parent="1" name="utf8mb4_vietnamese_ci">
       <Charset>utf8mb4</Charset>
     </collation>
-    <schema id="324" parent="1" name="first_MVC_project">
+    <schema id="324" parent="1" name="first_mvc_project">
       <Current>1</Current>
-      <CollationName>utf8_general_ci</CollationName>
+      <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="325" parent="1" name="information_schema">
       <CollationName>utf8_general_ci</CollationName>
@@ -1155,54 +1157,86 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <CollationName>utf8_bin</CollationName>
     </schema>
     <schema id="329" parent="1" name="test">
-      <CollationName>utf8mb4_general_ci</CollationName>
+      <CollationName>latin1_swedish_ci</CollationName>
     </schema>
-    <user id="330" parent="1" name="&apos;&apos;">
+    <user id="330" parent="1" name="pma">
       <Host>localhost</Host>
     </user>
-    <user id="331" parent="1" name="pma">
-      <Host>localhost</Host>
-    </user>
-    <user id="332" parent="1" name="root">
+    <user id="331" parent="1" name="root">
       <Host>127.0.0.1</Host>
     </user>
-    <user id="333" parent="1" name="root">
+    <user id="332" parent="1" name="root">
       <Host>::1</Host>
     </user>
-    <user id="334" parent="1" name="root">
+    <user id="333" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <table id="335" parent="324" name="Items">
+    <table id="334" parent="324" name="items">
       <Engine>InnoDB</Engine>
-      <CollationName>utf8_general_ci</CollationName>
+      <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <column id="336" parent="335" name="id">
-      <AutoIncrement>6</AutoIncrement>
-      <DasType>int(11)|0s</DasType>
+    <table id="335" parent="324" name="users">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <column id="336" parent="334" name="id">
+      <AutoIncrement>3</AutoIncrement>
+      <DasType>int(8)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="337" parent="335" name="name">
-      <DasType>varchar(255)|0s</DasType>
+    <column id="337" parent="334" name="name">
+      <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="338" parent="335" name="price">
-      <DasType>int(11)|0s</DasType>
+    <column id="338" parent="334" name="price">
+      <DasType>int(8)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="339" parent="335" name="amount">
-      <DasType>int(11)|0s</DasType>
+    <column id="339" parent="334" name="amount">
+      <DasType>int(8)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="340" parent="335" name="PRIMARY">
+    <index id="340" parent="334" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="341" parent="335" name="PRIMARY">
+    <key id="341" parent="334" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="342" parent="335" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int(11)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="343" parent="335" name="email">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="344" parent="335" name="password">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="345" parent="335" name="fullname">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="346" parent="335" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="347" parent="335" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
