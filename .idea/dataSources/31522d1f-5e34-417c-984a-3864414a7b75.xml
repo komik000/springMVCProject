@@ -1177,7 +1177,7 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <CollationName>utf8_general_ci</CollationName>
     </table>
     <column id="336" parent="335" name="id">
-      <AutoIncrement>6</AutoIncrement>
+      <AutoIncrement>13</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1197,12 +1197,16 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="340" parent="335" name="PRIMARY">
+    <column id="340" parent="335" name="link">
+      <DasType>varchar(500)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <index id="341" parent="335" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="341" parent="335" name="PRIMARY">
+    <key id="342" parent="335" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

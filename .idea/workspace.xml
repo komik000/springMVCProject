@@ -9,18 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/javax.servlet-api-4.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/javax.servlet.jsp-api-2.3.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="FirstCommitAndPush">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31522d1f-5e34-417c-984a-3864414a7b75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31522d1f-5e34-417c-984a-3864414a7b75.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/AddItemServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/AddItemServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/EditServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/EditServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaeee/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/javaeee/db/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaeee/db/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/javaeee/db/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addItem.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addItem.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product_cards.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product_cards.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JspContextManager">
@@ -467,8 +472,18 @@
       <workItem from="1682014797416" duration="704000" />
       <workItem from="1682529907091" duration="2126000" />
       <workItem from="1682593268196" duration="6685000" />
-      <workItem from="1683032696140" duration="710000" />
+      <workItem from="1683032696140" duration="3405000" />
+      <workItem from="1683102232133" duration="2578000" />
+      <workItem from="1683216331649" duration="357000" />
     </task>
+    <task id="LOCAL-00001" summary="FirstCommitAndPush">
+      <created>1683035116173</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683035116173</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,6 +492,11 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.configurationType" implementationName="com.poratu.idea.plugins.tomcat" />
     <option featureType="dependencySupport" implementationName="maven-packaging:war" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FirstCommit" />
+    <MESSAGE value="FirstCommitAndPush" />
+    <option name="LAST_COMMIT_MESSAGE" value="FirstCommitAndPush" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

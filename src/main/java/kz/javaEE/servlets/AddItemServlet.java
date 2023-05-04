@@ -21,11 +21,12 @@ public class AddItemServlet extends HttpServlet {
         String name = request.getParameter("name");
         int amount = Integer.parseInt(request.getParameter("amount"));
         int price = Integer.parseInt(request.getParameter("price"));
+        String link = request.getParameter("link");
 
-        Items it = new Items(null,name,price,amount);
+        Items it = new Items(null,name,price,amount,link);
         DBManager.addItem(it);
         System.out.println(it);
 
-        response.sendRedirect("/additem?success");
+        response.sendRedirect("/home");
     }
 }

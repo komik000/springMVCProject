@@ -35,6 +35,8 @@ public class EditServlet extends HttpServlet {
         String name = request.getParameter("name");
         int amount = Integer.parseInt(request.getParameter("amount"));
         int price = Integer.parseInt(request.getParameter("price"));
+        String link = request.getParameter("link");
+
 
         Items item = DBManager.getItem(id);
 
@@ -42,6 +44,7 @@ public class EditServlet extends HttpServlet {
             item.setAmount(amount);
             item.setPrice(price);
             item.setName(name);
+            item.setLink(link);
 
 
 

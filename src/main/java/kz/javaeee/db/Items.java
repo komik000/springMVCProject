@@ -6,12 +6,23 @@ public class Items {
     private String name;
     private int price;
     private int amount;
+
+    private String link;
     public Items(){}
-    public Items(Long id, String name, int price, int amount) {
+    public Items(Long id, String name, int price, int amount,String link) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.amount = amount;
+        this.link = link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public String getLink() {
+        return link;
     }
 
     public long getId() {
@@ -29,6 +40,7 @@ public class Items {
     public int getAmount() {
         return amount;
     }
+
 
     public void setId(Long id) {
         this.id = id;

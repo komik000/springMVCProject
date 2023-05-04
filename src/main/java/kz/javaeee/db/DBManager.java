@@ -25,12 +25,13 @@ public class DBManager {
         try{
 
             PreparedStatement statement = connection.prepareStatement("" +
-                    "INSERT INTO items (id,name,price,amount) " +
-                    "VALUES (NULL,?,?,?)" +
+                    "INSERT INTO items (id,name,price,amount,link) " +
+                    "VALUES (NULL,?,?,?,?)" +
                     "");
             statement.setString(1,item.getName());
             statement.setInt(2,item.getPrice());
             statement.setInt(3,item.getAmount());
+            statement.setString(4,item.getLink());
 
             rows = statement.executeUpdate();
             statement.close();
@@ -48,7 +49,7 @@ public class DBManager {
         try{
 
             PreparedStatement statement = connection.prepareStatement(""+
-                    "SELECT id,name,price,amount" +
+                    "SELECT id,name,price,amount,link" +
                     " FROM items ORDER BY price DESC"
             );
 
@@ -61,7 +62,8 @@ public class DBManager {
                         resultSet.getLong("id"),
                         resultSet.getString("name"),
                         resultSet.getInt("price"),
-                        resultSet.getInt("amount")
+                        resultSet.getInt("amount"),
+                        resultSet.getString("link")
                 ));
             }
 
@@ -91,7 +93,8 @@ public class DBManager {
                         resultSet.getLong("id"),
                         resultSet.getString("name"),
                         resultSet.getInt("price"),
-                        resultSet.getInt("amount")
+                        resultSet.getInt("amount"),
+                        resultSet.getString("link")
                 );
             }
 
@@ -107,14 +110,15 @@ public class DBManager {
         int rows = 0;
 
         try{
-            String sql = "UPDATE items SET name = ?, price = ?, amount = ? WHERE id = ?";
+            String sql = "UPDATE items SET name = ?, price = ?, amount = ?,link = ? WHERE id = ?";
 
             PreparedStatement statement = connection.prepareStatement(sql);
 
             statement.setString(1,item.getName());
             statement.setInt(2,item.getPrice());
             statement.setInt(3,item.getAmount());
-            statement.setLong(4,item.getId());
+            statement.setString(4,item.getLink());
+            statement.setLong(5,item.getId());
 
             rows = statement.executeUpdate();
             statement.close();
@@ -145,4 +149,21 @@ public class DBManager {
 
         return rows>0;
     }
+//    public static boolean checkUser(String email,String password) {
+//        boolean isUser = false;
+//        try{
+//            String sql = "DELETE FROM items WHERE id = ?";
+//
+//            PreparedStatement statement = connection.prepareStatement(sql);
+//            statement.setLong(1,item.getId());
+//
+//            statement.close();
+//
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//        return isUser;
+//    }
 }

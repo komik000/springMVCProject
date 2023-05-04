@@ -44,10 +44,17 @@
             <input type="number" name="price" class="form-control">
           </div>
           <div class="form-group">
+            <label>
+              LINK:
+            </label>
+            <input type="number" name="link" class="form-control">
+          </div>
+          <div class="form-group">
             <button class="btn btn-success">
               ADD ITEM
             </button>
           </div>
+
         </form>
 
 
