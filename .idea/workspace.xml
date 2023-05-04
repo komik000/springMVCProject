@@ -9,12 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="Created login/signup, updated some methods, and new functions">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31522d1f-5e34-417c-984a-3864414a7b75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31522d1f-5e34-417c-984a-3864414a7b75.xml" afterDir="false" />
+    <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="CommitAndPush">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendor/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/AddItemServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/AddItemServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/EditServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/EditServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/addItem.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/addItem.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/product_cards.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/product_cards.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -486,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683101422620</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CommitAndPush">
+      <created>1683223874684</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683223874684</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +517,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created login/signup, updated some methods, and new functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created login/signup, updated some methods, and new functions" />
+    <MESSAGE value="CommitAndPush" />
+    <option name="LAST_COMMIT_MESSAGE" value="CommitAndPush" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

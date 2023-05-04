@@ -6,7 +6,7 @@ import kz.Entity.Items;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
-import java.io.IOException;
+import java.io.*;
 
 @WebServlet(value = "/edit")
 public class EditServlet extends HttpServlet {
@@ -30,12 +30,18 @@ public class EditServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        System.out.println(request.getParameter("id"));
         Long id = Long.parseLong(request.getParameter("id"));
         String name = request.getParameter("name");
         int amount = Integer.parseInt(request.getParameter("amount"));
         int price = Integer.parseInt(request.getParameter("price"));
-        String link = request.getParameter("link");
+
+        Part filePart = request.getPart("link");
+
+        // Read the file content and convert it to a string
+        InputStream fileContent = filePart.getInputStream();
+        String link = convertStreamToString(fileContent);
+
 
 
         Items item = ItemsDAO.getItem(id);
@@ -56,6 +62,16 @@ public class EditServlet extends HttpServlet {
         }
         else {
             response.sendRedirect("/");
+        }
+    }
+    private String convertStreamToString(InputStream inputStream) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
+            StringBuilder stringBuilder = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                stringBuilder.append(line);
+            }
+            return stringBuilder.toString();
         }
     }
 }
