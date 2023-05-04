@@ -9,33 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="Created login/signup, updated some methods, and new functions">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/31522d1f-5e34-417c-984a-3864414a7b75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31522d1f-5e34-417c-984a-3864414a7b75.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/AddItemServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/AddItemServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/CardServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/CardServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/DeleteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/DetailsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/DetailsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/EditServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/EditServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/IndexServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/IndexServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaEE/servlets/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaeee/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/db/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaeee/db/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/Entity/Items.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/javaeee/db/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/Entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/404.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addItem.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/addItem.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/product_cards.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/product_cards.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendor/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/Entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/db/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/db/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/SignupServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/SignupServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -497,8 +480,17 @@
       <workItem from="1682593268196" duration="6685000" />
       <workItem from="1683032696140" duration="710000" />
       <workItem from="1683035647322" duration="8650000" />
-      <workItem from="1683096387242" duration="4714000" />
+      <workItem from="1683096387242" duration="8961000" />
+      <workItem from="1683215965149" duration="1720000" />
     </task>
+    <task id="LOCAL-00001" summary="Created login/signup, updated some methods, and new functions">
+      <created>1683101422620</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683101422620</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,6 +510,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created login/signup, updated some methods, and new functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created login/signup, updated some methods, and new functions" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

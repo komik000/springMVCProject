@@ -85,7 +85,7 @@ public class UserServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         String fullName = request.getParameter("fullName");
-        User user = new User(0,email, password, fullName);
+        User user = new User(0,email, password, fullName,false);
         userDao.createUser(user);
         response.sendRedirect(request.getContextPath() + "/user");
     }
@@ -95,7 +95,7 @@ public class UserServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         String fullName = request.getParameter("fullName");
-        User user = new User(id, email, password, fullName);
+        User user = new User(id, email, password, fullName,false);
         userDao.updateUser(user);
         response.sendRedirect(request.getContextPath() + "/user");
     }

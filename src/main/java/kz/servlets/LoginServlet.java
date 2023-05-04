@@ -41,6 +41,13 @@ public class LoginServlet extends HttpServlet {
             if (user != null && user.getPassword().equals(password)) {
                 HttpSession session = request.getSession();
                 session.setAttribute("user", user);
+
+                Cookie emailCookie = new Cookie("email",user.getEmail());
+                Cookie passwordCookie = new Cookie("password",user.getPassword());
+                emailCookie.setMaxAge(60*60*24*30);
+                passwordCookie.setMaxAge(60*60*24*30);
+                response.addCookie(emailCookie);
+                response.addCookie(passwordCookie);
                 response.sendRedirect(request.getContextPath()+"/");
             } else {
                 errors.add("Invalid email or password.");

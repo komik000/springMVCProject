@@ -40,7 +40,7 @@ public class SignupServlet extends HttpServlet {
             return;
         }
 
-        User user = new User(0,email, password, fullName);
+        User user = new User(0,email, password, fullName,false);
         UserDAO userDao = new UserDAO();
         userDao.createUser(user);
         response.sendRedirect(request.getContextPath() + "jsp/login.jsp");

@@ -5,6 +5,7 @@
     <%@include file="../vendor/head.jsp"%>
 </head>
 <body>
+<%@include file="../vendor/navbar.jsp"%>
 <div class="container">
     <div class="row mt-5">
         <div class="col-sm-6 offset-3">

@@ -1,5 +1,6 @@
 <%@ page import="kz.Entity.Items" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.Objects" %>
 <!doctype html>
 <html lang="en">
     <head>
@@ -29,21 +30,32 @@
                 </div>
 
                 <form action="/login" method="post">
-
                     <!-- Email input -->
+
                     <div class="form-outline mb-4" style="display: flex;">
                         <label class="form-label" for="form3Example4" style="width: 20%;margin-left: 20px">Email</label>
-                        <input type="text" name="email" id="form2Example4" style="width: 80%" class="form-control" />
+                        <% Cookie[] cookies = request.getCookies();
+                            String email = "";
+                            String password = "";
+                            if (cookies!=null){
+                                for (Cookie cookie: cookies){
+                                    if (cookie.getName().equals( "email"))
+                                        email = cookie.getValue();
+                                    if (cookie.getName().equals( "password"))
+                                        password = cookie.getValue();
+                                    System.out.println(cookie.getName()+" "+cookie.getValue());
+                                }
+                            }
+                        %>
+                        <input type="text" name="email" value="<% out.println(email); %>" id="form2Example4" style="width: 80%" class="form-control" />
                     </div>
 
                     <!-- Password input -->
                     <div class="form-outline mb-4" style="display: flex;">
                         <label class="form-label" for="form3Example4" style="width: 20%;margin-left: 20px">Password</label>
-                        <input type="password" name="password" id="form3Example4" style="width: 80%" class="form-control" />
+                        <input type="password" name="password" value="<% out.println(password); %>" id="form3Example4" style="width: 80%" class="form-control" />
 
                     </div>
-
-
 
                     <!-- Submit button -->
                     <button type="submit" class="btn btn-primary btn-block mb-4 btn-success" style="width:10%;margin-left: 20px" >

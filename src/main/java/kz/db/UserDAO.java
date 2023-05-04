@@ -16,7 +16,7 @@ public class UserDAO {
         try {
 
 
-            String sql = "SELECT id, email, password, fullname FROM users";
+            String sql = "SELECT * FROM users";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
 
@@ -25,8 +25,9 @@ public class UserDAO {
                 String email = resultSet.getString("email");
                 String password = resultSet.getString("password");
                 String fullName = resultSet.getString("full_name");
+                boolean isAdmin = resultSet.getBoolean("is_admin");
 
-                User user = new User(id, email, password, fullName);
+                User user = new User(id, email, password, fullName,isAdmin);
                 users.add(user);
             }
             resultSet.close();
@@ -45,7 +46,7 @@ public class UserDAO {
         try {
 
 
-            String sql = "SELECT email, password, fullname FROM users WHERE id = ?";
+            String sql = "SELECT * FROM users WHERE id = ?";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setInt(1, id);
 
@@ -55,8 +56,9 @@ public class UserDAO {
                 String email = resultSet.getString("email");
                 String password = resultSet.getString("password");
                 String fullName = resultSet.getString("fullname");
+                boolean isAdmin = resultSet.getBoolean("is_admin");
 
-                user = new User(id, email, password, fullName);
+                user = new User(id, email, password, fullName,isAdmin);
             }
 
             resultSet.close();
@@ -73,7 +75,7 @@ public class UserDAO {
         try {
 
 
-            String sql = "SELECT email, password, fullname FROM users WHERE email = ?";
+            String sql = "SELECT * FROM users WHERE email = ?";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, email);
 
@@ -83,8 +85,9 @@ public class UserDAO {
                 String mail = resultSet.getString("email");
                 String password = resultSet.getString("password");
                 String fullName = resultSet.getString("fullname");
+                boolean isAdmin = resultSet.getBoolean("is_admin");
 
-                user = new User(0, mail, password, fullName);
+                user = new User(0, mail, password, fullName,isAdmin);
             }
 
             resultSet.close();
@@ -100,12 +103,12 @@ public class UserDAO {
         try {
 
 
-            String sql = "INSERT INTO users (email, password, fullname) VALUES (?, ?, ?)";
+            String sql = "INSERT INTO users (email, password, fullname,is_admin) VALUES (?, ?, ?,?)";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, user.getEmail());
             statement.setString(2, user.getPassword());
             statement.setString(3, user.getFullName());
-
+            statement.setBoolean(4, user.isAdmin());
             statement.executeUpdate();
 
             statement.close();
@@ -131,11 +134,12 @@ public class UserDAO {
 
     public void updateUser(User user){
         try {
-            PreparedStatement stmt = connection.prepareStatement("UPDATE users SET email = ?, password = ?, fullname = ? WHERE id = ?");
+            PreparedStatement stmt = connection.prepareStatement("UPDATE users SET email = ?, password = ?, fullname = ?,is_admin = ? WHERE id = ?");
             stmt.setString(1, user.getEmail());
             stmt.setString(2, user.getPassword());
             stmt.setString(3, user.getFullName());
             stmt.setInt(4, user.getId());
+            stmt.setBoolean(5, user.isAdmin());
             stmt.executeUpdate();
         }catch (SQLException e){
             e.printStackTrace();
