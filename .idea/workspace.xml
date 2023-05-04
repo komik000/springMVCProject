@@ -10,15 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="Created login/signup, updated some methods, and new functions">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/31522d1f-5e34-417c-984a-3864414a7b75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31522d1f-5e34-417c-984a-3864414a7b75.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/Entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/db/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/db/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/SignupServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/SignupServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendor/navbar.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +276,7 @@
         </option>
       </method>
     </configuration>
-    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.73" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.87" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="springMVCProject:war exploded">
@@ -291,7 +287,6 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="c269cac4-0946-4281-adc0-f44cab3e84ff" />
-        <option name="HTTP_PORT" value="8008" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -430,6 +425,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Smart Tomcat.Unnamed" />
       <item itemvalue="Tomcat Server.Tomcat" />
       <item itemvalue="Tomcat Server.Tomcat main" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.87" />

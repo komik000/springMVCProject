@@ -4,11 +4,11 @@
 
   <div class="navbar navbar-expand-lg navbar-light" style="display:flex;justify-content: center;">
     <div style="width:30%">
-      <a class="navbar-brand" href="/"><%=siteName%></a>
+      <a class="navbar-brand" href="/home"><%=siteName%></a>
     </div>
     <ul class="nav justify-content-center">
       <li class="nav-item active">
-        <a class="nav-link text-dark" href="/">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link text-dark" href="/home">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-dark" href="/additem">Add Item</a>
