@@ -24,7 +24,7 @@
         <%
           }
         %>
-        <form action="/additem" method="post">
+        <form action="/additem" method="post" enctype="multipart/form-data">
           <div class="form-group" >
             <label>
               NAME:
@@ -47,7 +47,7 @@
             <label>
               LINK:
             </label>
-            <input type="number" name="link" class="form-control">
+            <input type="file" name="link" class="form-control">
           </div>
           <div class="form-group">
             <button class="btn btn-success">
@@ -61,5 +61,8 @@
       </div>
     </div>
   </div>
+  <% if (request.getAttribute("image") != null){
+    Part filePart = (Part) request.getAttribute("image");
+    out.print(filePart.getSubmittedFileName());}%>
   </body>
 </html>

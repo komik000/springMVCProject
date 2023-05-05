@@ -40,8 +40,10 @@
                 <%
                     }
                 %>
-                <form action="/edit" method="post">
-                    <input type="hidden" name="id" value="<%=item.getId()%>">
+                <form action="/edit" method="post" enctype="multipart/form-data">
+                    <label>
+                        <input type="number" name="id" value="<%=item.getId()%>" >
+                    </label>
                     <div class="form-group">
                         <label>
                             NAME:
@@ -60,6 +62,15 @@
                             PRICE:
                         </label>
                         <input type="number" name="price" class="form-control" value="<%=item.getPrice()%>">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            LINK:
+                        </label>
+<%--                        <input type="text" name="link" class="form-control" value="<%=item.getLink()%>">--%>
+                        <input id ="image" type="file" name="link" multiple="multiple" class="form-control"  value="<%=item.getLink()%>" >
+                        <input type="submit" value="Upload">
+
                     </div>
                     <div class="form-group">
                         <button class="btn btn-success">
@@ -102,4 +113,12 @@
     </div>
 </div>
 </body>
+<script>
+    function getImage(){
+        image = document.getElementById("image");
+        console.log(image.dir+" console");
+        console.log(image+" console");
+    }
+</script>
 </html>
+
