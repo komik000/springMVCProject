@@ -19,7 +19,7 @@
       <%if(session.getAttribute("user") != null){
         User user = (User) session.getAttribute("user");%>
       <li class="nav-item">
-        <a class="nav-link text-dark" href="<%=user.getFullName()%>"><%=user.getFullName()%></a>
+        <a class="nav-link text-dark" href="/profile"><%=user.getFullName()%></a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-dark" href="logout">Logout</a>

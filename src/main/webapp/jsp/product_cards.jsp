@@ -19,7 +19,7 @@
           <div class="card mt-4" style="width: 18rem;">
 
 
-            <img src="/img/<%=it.getLink()%>" class="card-img-top mt-4" alt="Iphone 13 Pro">
+            <img src="img/<%=it.getLink()%>" class="card-img-top mt-4" alt="Iphone 13 Pro">
             <div class="card-body">
               <h5 class="card-title"><%=it.getName()%></h5>
               <p class="card-text"><%=it.getPrice()%></p>

@@ -14,9 +14,14 @@ import java.util.List;
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("jsp/login.jsp").forward(request,response);
-    }
+        HttpSession session = request.getSession();
+        if (session.getAttribute("user") == null) {
+            request.getRequestDispatcher("jsp/login.jsp").forward(request, response);
+        } else {
+            response.sendRedirect(request.getContextPath() + "/profile");
 
+        }
+    }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String email = request.getParameter("email");
