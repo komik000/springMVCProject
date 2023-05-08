@@ -8,7 +8,7 @@
   </head>
   <body>
     <%@include file="../vendor/navbar.jsp"%>
-    <div class="container text-center">
+    <div class="container text-center" style="">
       <div class="row row-cols-3">
         <%
           ArrayList<Items> items = (ArrayList<Items>) request.getAttribute("tovary");
@@ -16,7 +16,7 @@
             for(Items it : items) {
         %>
         <div class="col">
-          <div class="card mt-4" style="width: 18rem;">
+          <div class="card mt-4" style="width: 18rem;border-radius: 16px;">
 
 
             <img src="/img/<%=it.getLink()%>" class="card-img-top mt-4" alt="Iphone 13 Pro">

@@ -9,13 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="CommitAndPush">
+    <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="FileUpload">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/products/Animals.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/products/Beauty1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/products/Clothes1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/products/Computer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/products/Holidays.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/products/Jewelry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/products/Shoes1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/products/Sport1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/products/TV.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/products/iphone_gadget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/AddItemServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/AddItemServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/EditServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/EditServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/addItem.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/addItem.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/product_cards.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/product_cards.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/signup.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +52,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JspContextManager">
-    <jsp-to-context jsp-file="file://$PROJECT_DIR$/src/main/webapp/vendor/navbar.jsp" context-file="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
+    <jsp-to-context jsp-file="file://$PROJECT_DIR$/src/main/webapp/vendor/navbar.jsp" context-file="file://$PROJECT_DIR$/src/main/webapp/login/login.jsp" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -96,10 +107,11 @@
       <recent name="C:\Users\akimi\IdeaProjects\springMVCProject\src\main\webapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/login" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/img/products" />
       <recent name="C:\Users\akimi\IdeaProjects\springMVCProject\src\main\webapp\jsp" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/vendor" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
@@ -479,6 +491,8 @@
       <workItem from="1683035647322" duration="8650000" />
       <workItem from="1683096387242" duration="8961000" />
       <workItem from="1683215965149" duration="1720000" />
+      <workItem from="1683382356526" duration="3089000" />
+      <workItem from="1683531336014" duration="1305000" />
     </task>
     <task id="LOCAL-00001" summary="Created login/signup, updated some methods, and new functions">
       <created>1683101422620</created>
@@ -494,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683223874684</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="FileUpload">
+      <created>1683232740615</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683232740615</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +539,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created login/signup, updated some methods, and new functions" />
     <MESSAGE value="CommitAndPush" />
-    <option name="LAST_COMMIT_MESSAGE" value="CommitAndPush" />
+    <MESSAGE value="FileUpload" />
+    <option name="LAST_COMMIT_MESSAGE" value="FileUpload" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

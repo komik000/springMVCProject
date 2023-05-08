@@ -14,7 +14,7 @@ import java.util.List;
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("jsp/login.jsp").forward(request,response);
+        request.getRequestDispatcher("login/login.jsp").forward(request,response);
     }
 
     @Override
@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet {
         }
         if (!errors.isEmpty()) {
             request.setAttribute("errors", errors);
-            request.getRequestDispatcher("jsp/login.jsp").forward(request, response);
+            request.getRequestDispatcher("login/login.jsp").forward(request, response);
             return;
         }
 
