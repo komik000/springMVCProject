@@ -22,13 +22,14 @@ public class ItemsDAO {
         try{
 
             PreparedStatement statement = connection.prepareStatement("" +
-                    "INSERT INTO items (id,name,price,amount,link) " +
-                    "VALUES (NULL,?,?,?,?)" +
+                    "INSERT INTO items (id,name,price,amount,link,category_id) " +
+                    "VALUES (NULL,?,?,?,?,?)" +
                     "");
             statement.setString(1,item.getName());
             statement.setInt(2,item.getPrice());
             statement.setInt(3,item.getAmount());
             statement.setString(4,item.getLink());
+            statement.setInt(5,1);
 
             rows = statement.executeUpdate();
             statement.close();

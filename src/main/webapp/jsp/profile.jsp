@@ -10,8 +10,16 @@
   <%@include file="../vendor/navbar.jsp"%>
   <div style="display: flex;justify-content: center">
     <div>
-      <h1>Hello User Profile</h1>
+      <% if (request.getAttribute("user")!=null)
+      {
+        User user = (User)request.getAttribute("user");
+      %>
+
+      <h1>Hello <%=user.getFullName()%> </h1>
+      <%}%>
+
       <h5>This is your profile page</h5>
+
     </div>
   </div>
 </body>
