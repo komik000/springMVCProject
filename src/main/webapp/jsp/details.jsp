@@ -31,50 +31,70 @@
               }
           %>
       </div>
-  </div>
-  <section style="background-color: #ad655f;">
-      <div class="container my-5 py-5">
-          <div class="row d-flex justify-content-center">
-              <div class="col-md-12 col-lg-10">
-<%--                  <div class="card text-dark">--%>
-<%--                      <% List<Comment> comments = (List<Comment>) request.getAttribute("comment");--%>
-<%--                        if (comments != null){--%>
-<%--                            for (Comment comment: comments){--%>
-<%--                                UserDAO userDAO = new UserDAO();--%>
-<%--                                User user = userDAO.getUserByID(comment.getUserId());--%>
-<%--                      %>--%>
-<%--                      <div class="card-body p-4">--%>
-<%--                          <h4 class="mb-0">Recent comments</h4>--%>
-<%--                          <p class="fw-light mb-4 pb-2">Latest Comments section by users</p>--%>
 
-<%--                          <div class="d-flex flex-start">--%>
-<%--                              <img class="rounded-circle shadow-1-strong me-3"--%>
-<%--                                   src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(23).webp" alt="avatar" width="60"--%>
-<%--                                   height="60" />--%>
-<%--                              <div>--%>
-<%--                                  <h6 class="fw-bold mb-1"><%=user.getFullName()%></h6>--%>
-<%--                                  <div class="d-flex align-items-center mb-3">--%>
-<%--                                      <p class="mb-0">--%>
-<%--                                          <%=comment.getDate()%>>--%>
-<%--                                          <span class="badge bg-primary">Pending</span>--%>
-<%--                                      </p>--%>
-<%--                                      <a href="#!" class="link-muted"><i class="fas fa-pencil-alt ms-2"></i></a>--%>
-<%--                                      <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>--%>
-<%--                                      <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>--%>
-<%--                                  </div>--%>
-<%--                                  <p class="mb-0">--%>
-<%--                                      <%=comment.getComment()%>--%>
-<%--                                  </p>--%>
-<%--                              </div>--%>
-<%--                          </div>--%>
-<%--                      </div>--%>
-<%--                      <hr class="my-0" />--%>
-<%--                      <% }--%>
-<%--                        }%>--%>
-<%--                  </div>--%>
+
+
+      <section style="background-color: #e9ecef;">
+
+          <div class="container my-5 py-5">
+
+                  <div class="col-md-12 col-lg-10">
+
+                      <% Long id = Long.parseLong(request.getParameter("id"));
+                          System.out.println(id);
+                      %>
+                      <form action="/details?id=<%=id%>" method="post">
+
+
+                          <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Add comment</label>
+                              <textarea name="comment" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                            <button type="submit" class="btn btn-primary "> Submit</button>
+                      </form>
+
+
+                  <div class="">
+                      <div class="card text-dark">
+                          <% List<Comment> comments = (List<Comment>) request.getAttribute("comments");
+                              if (comments != null){
+                                  for (Comment comment: comments){
+                                      UserDAO userDAO = new UserDAO();
+                                      User user = userDAO.getUserByID(comment.getUserId());
+                          %>
+                          <div class="card-body p-4">
+                              <h4 class="mb-0">Recent comments</h4>
+                              <p class="fw-light mb-4 pb-2">Latest Comments section by users</p>
+
+                              <div class="d-flex flex-start">
+                                  <img class="rounded-circle shadow-1-strong me-3"
+                                       src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(23).webp" alt="avatar" width="60"
+                                       height="60" />
+                                  <div>
+                                      <h6 class="fw-bold mb-1"><%=user.getFullName()%></h6>
+                                      <div class="d-flex align-items-center mb-3">
+                                          <p class="mb-0">
+                                              <%=comment.getDate()%>
+                                          </p>
+                                          <a href="#!" class="link-muted"><i class="fas fa-pencil-alt ms-2"></i></a>
+                                          <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
+                                          <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
+                                      </div>
+                                      <p class="mb-0">
+                                          <%=comment.getComment()%>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr class="my-0" />
+                          <% }
+                          }%>
+                      </div>
+                  </div>
               </div>
           </div>
-      </div>
-  </section>
+      </section>
+  </div>
+
 </body>
 </html>

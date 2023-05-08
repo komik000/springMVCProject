@@ -53,12 +53,13 @@ public class UserDAO {
             ResultSet resultSet = statement.executeQuery();
 
             if (resultSet.next()) {
+                int usid = resultSet.getInt("id");
                 String email = resultSet.getString("email");
                 String password = resultSet.getString("password");
                 String fullName = resultSet.getString("fullname");
                 boolean isAdmin = resultSet.getBoolean("is_admin");
 
-                user = new User(id, email, password, fullName,isAdmin);
+                user = new User(usid, email, password, fullName,isAdmin);
             }
 
             resultSet.close();
@@ -82,12 +83,13 @@ public class UserDAO {
             ResultSet resultSet = statement.executeQuery();
 
             if (resultSet.next()) {
+                int id = resultSet.getInt("id");
                 String mail = resultSet.getString("email");
                 String password = resultSet.getString("password");
                 String fullName = resultSet.getString("fullname");
                 boolean isAdmin = resultSet.getBoolean("is_admin");
 
-                user = new User(0, mail, password, fullName,isAdmin);
+                user = new User(id, mail, password, fullName,isAdmin);
             }
 
             resultSet.close();

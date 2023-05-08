@@ -10,13 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="Login and logout logic, Profile added and redirection">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31522d1f-5e34-417c-984a-3864414a7b75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31522d1f-5e34-417c-984a-3864414a7b75.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_04_05_2023__23_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_04_05_2023__23_31__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/db/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/db/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/db/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/AddItemServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/AddItemServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/DetailsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/DetailsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/IndexServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/IndexServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/Servlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/product_cards.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/product_cards.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -438,6 +440,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Tomcat Server.index.jsp" />
         <item itemvalue="Tomcat Server.index.jsp" />
       </list>
     </recent_temporary>
