@@ -1,5 +1,5 @@
 <%
-    String siteName = "ELECTRONICS";
+    String siteName = "Shop.kz";
 %>
 
 

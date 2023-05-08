@@ -16,12 +16,12 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         if (session.getAttribute("user") == null) {
-            request.getRequestDispatcher("jsp/login.jsp").forward(request, response);
+            request.getRequestDispatcher("login/login.jsp").forward(request, response);
         } else {
             response.sendRedirect(request.getContextPath() + "/profile");
 
-        }
-    }
+        }    }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String email = request.getParameter("email");
@@ -37,7 +37,7 @@ public class LoginServlet extends HttpServlet {
         }
         if (!errors.isEmpty()) {
             request.setAttribute("errors", errors);
-            request.getRequestDispatcher("jsp/login.jsp").forward(request, response);
+            request.getRequestDispatcher("login/login.jsp").forward(request, response);
             return;
         }
 
