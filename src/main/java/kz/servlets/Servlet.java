@@ -15,7 +15,6 @@ public class Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ArrayList<Items> items = ItemsDAO.getItems();
-        System.out.println();
         request.setAttribute("tovary",items);
         request.getRequestDispatcher("jsp/home.jsp").forward(request,response);
     }

@@ -14,7 +14,7 @@ public class DBManager {
     private DBManager() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/first_MVC_project?useUnicode=true&serverTimezone=UTC", "root", "");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3303/first_MVC_project?useUnicode=true&serverTimezone=UTC", "root", "");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

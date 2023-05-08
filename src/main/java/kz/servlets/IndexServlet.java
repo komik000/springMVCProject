@@ -1,5 +1,7 @@
 package kz.servlets;
 
+import kz.Entity.Comment;
+//import kz.db.CommentDAO;
 import kz.db.DBManager;
 import kz.Entity.Items;
 import kz.db.ItemsDAO;
@@ -16,8 +18,6 @@ public class IndexServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ArrayList<Items> items = ItemsDAO.getItems();
-        PrintWriter out = response.getWriter();
-
         request.getRequestDispatcher("jsp/index.jsp").forward(request,response);
 
     }

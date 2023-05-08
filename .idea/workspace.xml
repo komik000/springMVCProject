@@ -9,14 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="Added classes, Dao's">
+    <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="Login and logout logic, Profile added and redirection">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31522d1f-5e34-417c-984a-3864414a7b75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31522d1f-5e34-417c-984a-3864414a7b75.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/db/ItemsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/db/ItemsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/AddItemServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/AddItemServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/product_cards.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/product_cards.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendor/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/db/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/DetailsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/DetailsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/IndexServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/IndexServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/Servlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/details.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -483,7 +483,8 @@
       <workItem from="1683035647322" duration="8650000" />
       <workItem from="1683096387242" duration="8961000" />
       <workItem from="1683215965149" duration="1720000" />
-      <workItem from="1683306118028" duration="2544000" />
+      <workItem from="1683306118028" duration="4338000" />
+      <workItem from="1683529215897" duration="1972000" />
     </task>
     <task id="LOCAL-00001" summary="Created login/signup, updated some methods, and new functions">
       <created>1683101422620</created>
@@ -499,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683306168948</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Login and logout logic, Profile added and redirection">
+      <created>1683308876755</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683308876755</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +543,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created login/signup, updated some methods, and new functions" />
     <MESSAGE value="Added classes, Dao's" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added classes, Dao's" />
+    <MESSAGE value="Login and logout logic, Profile added and redirection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login and logout logic, Profile added and redirection" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
