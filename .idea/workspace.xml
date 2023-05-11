@@ -9,16 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="Login and logout logic, Profile added and redirection">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_04_05_2023__23_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_04_05_2023__23_31__Changes_.xml" afterDir="false" />
+    <list default="true" id="abd27ac6-895f-4d90-8f64-93f7e244b1b6" name="Changes" comment="Home_Pаge_Updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/db/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/db/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/db/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/AddItemServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/AddItemServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/servlets/DetailsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/servlets/DetailsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/product_cards.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/product_cards.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +34,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JspContextManager">
-    <jsp-to-context jsp-file="file://$PROJECT_DIR$/src/main/webapp/vendor/navbar.jsp" context-file="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -433,6 +422,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Smart Tomcat.Unnamed" />
       <item itemvalue="Tomcat Server.Tomcat" />
       <item itemvalue="Tomcat Server.Tomcat main" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.87" />
