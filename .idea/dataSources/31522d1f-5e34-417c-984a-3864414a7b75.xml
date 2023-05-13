@@ -2,7 +2,7 @@
 <dataSource name="first_MVC_project@localhost">
   <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.45">
     <root id="1">
-      <DefaultCasing>lower/lower</DefaultCasing>
+      <DefaultCasing>mixed/mixed</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
       <Grants>|root||root|127.0.0.1|ALTER|G
 |root||root|::1|ALTER|G
@@ -104,7 +104,6 @@ test|schema||&apos;&apos;||CREATE ROUTINE|G
 test|schema||&apos;&apos;||CREATE TEMPORARY TABLES|G
 test|schema||&apos;&apos;||CREATE VIEW|G
 test|schema||&apos;&apos;||DELETE|G
-test|schema||&apos;&apos;||DELETE HISTORY|G
 test|schema||&apos;&apos;||DROP|G
 test|schema||&apos;&apos;||EVENT|G
 test|schema||&apos;&apos;||INDEX|G
@@ -121,7 +120,6 @@ test\\_%|schema||&apos;&apos;||CREATE ROUTINE|G
 test\\_%|schema||&apos;&apos;||CREATE TEMPORARY TABLES|G
 test\\_%|schema||&apos;&apos;||CREATE VIEW|G
 test\\_%|schema||&apos;&apos;||DELETE|G
-test\\_%|schema||&apos;&apos;||DELETE HISTORY|G
 test\\_%|schema||&apos;&apos;||DROP|G
 test\\_%|schema||&apos;&apos;||EVENT|G
 test\\_%|schema||&apos;&apos;||INDEX|G
@@ -132,7 +130,7 @@ test\\_%|schema||&apos;&apos;||SELECT|G
 test\\_%|schema||&apos;&apos;||SHOW VIEW|G
 test\\_%|schema||&apos;&apos;||TRIGGER|G
 test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
-      <ServerVersion>10.4.24</ServerVersion>
+      <ServerVersion>10.4.28</ServerVersion>
     </root>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
@@ -1140,9 +1138,9 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     <collation id="323" parent="1" name="utf8mb4_vietnamese_ci">
       <Charset>utf8mb4</Charset>
     </collation>
-    <schema id="324" parent="1" name="first_mvc_project">
+    <schema id="324" parent="1" name="first_MVC_project">
       <Current>1</Current>
-      <CollationName>utf8mb4_general_ci</CollationName>
+      <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="325" parent="1" name="information_schema">
       <CollationName>utf8_general_ci</CollationName>
@@ -1157,248 +1155,251 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <CollationName>utf8_bin</CollationName>
     </schema>
     <schema id="329" parent="1" name="test">
-      <CollationName>latin1_swedish_ci</CollationName>
+      <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <user id="330" parent="1" name="pma">
+    <user id="330" parent="1" name="&apos;&apos;">
       <Host>localhost</Host>
     </user>
-    <user id="331" parent="1" name="root">
-      <Host>127.0.0.1</Host>
+    <user id="331" parent="1" name="pma">
+      <Host>localhost</Host>
     </user>
     <user id="332" parent="1" name="root">
-      <Host>::1</Host>
+      <Host>127.0.0.1</Host>
     </user>
     <user id="333" parent="1" name="root">
+      <Host>::1</Host>
+    </user>
+    <user id="334" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <table id="334" parent="324" name="categories">
+    <table id="335" parent="324" name="categories">
       <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
+      <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="335" parent="324" name="comments">
+    <table id="336" parent="324" name="comments">
       <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
+      <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="336" parent="324" name="item_description">
+    <table id="337" parent="324" name="item_description">
       <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
+      <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="337" parent="324" name="items">
+    <table id="338" parent="324" name="items">
       <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
+      <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="338" parent="324" name="users">
+    <table id="339" parent="324" name="users">
       <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
+      <CollationName>utf8_general_ci</CollationName>
     </table>
-    <column id="339" parent="334" name="id">
-      <AutoIncrement>2</AutoIncrement>
-      <DasType>int(11)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="340" parent="334" name="name">
-      <DasType>varchar(255)|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <index id="341" parent="334" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="342" parent="334" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="343" parent="335" name="id">
+    <column id="340" parent="335" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="344" parent="335" name="item_id">
+    <column id="341" parent="335" name="name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <index id="342" parent="335" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="343" parent="335" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="344" parent="336" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int(11)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="345" parent="336" name="item_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="345" parent="335" name="user_id">
+    <column id="346" parent="336" name="user_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="346" parent="335" name="comment">
+    <column id="347" parent="336" name="comment">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="347" parent="335" name="date">
+    <column id="348" parent="336" name="date">
       <DasType>timestamp|0s</DasType>
       <DefaultExpression>cast(current_timestamp() as datetime)</DefaultExpression>
       <Position>5</Position>
     </column>
-    <foreign-key id="348" parent="335" name="comments_items_id_fk">
+    <foreign-key id="349" parent="336" name="comments_items_id_fk">
       <ColNames>item_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>items</RefTableName>
     </foreign-key>
-    <foreign-key id="349" parent="335" name="comments_users_id_fk">
+    <foreign-key id="350" parent="336" name="comments_users_id_fk">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>users</RefTableName>
     </foreign-key>
-    <index id="350" parent="335" name="PRIMARY">
+    <index id="351" parent="336" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="351" parent="335" name="comments_items_id_fk">
+    <index id="352" parent="336" name="comments_items_id_fk">
       <ColNames>item_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="352" parent="335" name="comments_users_id_fk">
+    <index id="353" parent="336" name="comments_users_id_fk">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="353" parent="335" name="PRIMARY">
+    <key id="354" parent="336" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="354" parent="336" name="id">
+    <column id="355" parent="337" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="355" parent="336" name="item_id">
+    <column id="356" parent="337" name="item_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="356" parent="336" name="year">
+    <column id="357" parent="337" name="year">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="357" parent="336" name="information">
+    <column id="358" parent="337" name="information">
       <DasType>varchar(500)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="358" parent="336" name="color">
+    <column id="359" parent="337" name="color">
       <DasType>varchar(155)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="359" parent="336" name="diagonal">
+    <column id="360" parent="337" name="diagonal">
       <DasType>float|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="360" parent="336" name="material">
+    <column id="361" parent="337" name="material">
       <DasType>varchar(255)|0s</DasType>
       <Position>7</Position>
     </column>
-    <foreign-key id="361" parent="336" name="item_description_items_id_fk">
+    <foreign-key id="362" parent="337" name="item_description_items_id_fk">
       <ColNames>item_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>items</RefTableName>
     </foreign-key>
-    <index id="362" parent="336" name="PRIMARY">
+    <index id="363" parent="337" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="363" parent="336" name="item_description_items_id_fk">
+    <index id="364" parent="337" name="item_description_items_id_fk">
       <ColNames>item_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="364" parent="336" name="PRIMARY">
+    <key id="365" parent="337" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="365" parent="337" name="id">
-      <AutoIncrement>7</AutoIncrement>
+    <column id="366" parent="338" name="id">
+      <AutoIncrement>2</AutoIncrement>
       <DasType>int(8)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="366" parent="337" name="name">
+    <column id="367" parent="338" name="name">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="367" parent="337" name="price">
+    <column id="368" parent="338" name="price">
       <DasType>int(8)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="368" parent="337" name="amount">
+    <column id="369" parent="338" name="amount">
       <DasType>int(8)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="369" parent="337" name="link">
+    <column id="370" parent="338" name="link">
       <DasType>varchar(500)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="370" parent="337" name="category_id">
+    <column id="371" parent="338" name="category_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <foreign-key id="371" parent="337" name="items_categories_id_fk">
+    <foreign-key id="372" parent="338" name="items_categories_id_fk">
       <ColNames>category_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>categories</RefTableName>
     </foreign-key>
-    <index id="372" parent="337" name="PRIMARY">
+    <index id="373" parent="338" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="373" parent="337" name="items_categories_id_fk">
+    <index id="374" parent="338" name="items_categories_id_fk">
       <ColNames>category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="374" parent="337" name="PRIMARY">
+    <key id="375" parent="338" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="375" parent="338" name="id">
+    <column id="376" parent="339" name="id">
       <AutoIncrement>2</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="376" parent="338" name="email">
+    <column id="377" parent="339" name="email">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="377" parent="338" name="password">
+    <column id="378" parent="339" name="password">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="378" parent="338" name="fullname">
+    <column id="379" parent="339" name="fullname">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="379" parent="338" name="is_admin">
+    <column id="380" parent="339" name="is_admin">
       <DasType>tinyint(1)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="380" parent="338" name="PRIMARY">
+    <index id="381" parent="339" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="381" parent="338" name="PRIMARY">
+    <key id="382" parent="339" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

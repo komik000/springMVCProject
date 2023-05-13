@@ -40,7 +40,8 @@
 
                   <div class="col-md-12 col-lg-10">
 
-                      <% Long id = Long.parseLong(request.getParameter("id"));
+                      <%
+                          Long id = Long.parseLong(request.getParameter("id"));
                           System.out.println(id);
                       %>
                       <form action="/details?id=<%=id%>" method="post">

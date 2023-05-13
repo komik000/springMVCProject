@@ -30,10 +30,10 @@ public class DetailsServlet extends HttpServlet {
 
         if(item != null) {
             CommentDAO commentDAO = new CommentDAO();
-            List<Comment> comments = commentDAO.getCommentsByItemId((int) item.getId());
-            System.out.println(comments.get(0).getComment());
+//            List<Comment> comments = commentDAO.getCommentsByItemId((int) item.getId());
+//            System.out.println(comments.get(0).getComment());
             request.setAttribute("item", item);
-            request.setAttribute("comments", comments);
+//            request.setAttribute("comments", comments);
             request.getRequestDispatcher("jsp/details.jsp").forward(request,response);
         }else{
             request.getRequestDispatcher("jsp/404.jsp").forward(request,response);

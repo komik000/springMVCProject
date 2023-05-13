@@ -38,7 +38,8 @@ public class AddItemServlet extends HttpServlet {
         String fileName = filePart.getSubmittedFileName();
         String link = String.valueOf(System.currentTimeMillis())+"_"+fileName;
         for (Part part : request.getParts()) {
-            String path = "C:\\Users\\akimi\\IdeaProjects\\springMVCProject\\src\\main\\webapp\\img\\";
+            String path = ("/Users/admin/Desktop/java/springMVCProject/src/main/webapp/img/");
+//            String path = "C:\\Users\\akimi\\IdeaProjects\\springMVCProject\\src\\main\\webapp\\img\\";
             part.write(path+""+ link);
         }
         Items it = new Items(null,name,price,amount,link);
